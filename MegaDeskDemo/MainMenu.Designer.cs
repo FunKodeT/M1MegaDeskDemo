@@ -63,6 +63,7 @@
             this.quoteViewBtn.TabIndex = 5;
             this.quoteViewBtn.Text = "View Quotes";
             this.quoteViewBtn.UseVisualStyleBackColor = true;
+            this.quoteViewBtn.Click += new System.EventHandler(this.OpenViewQuotes);
             // 
             // quoteSearchBtn
             // 
@@ -81,6 +82,7 @@
             this.exitBtn.TabIndex = 7;
             this.exitBtn.Text = "Exit";
             this.exitBtn.UseVisualStyleBackColor = true;
+            this.exitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // mainMenu
             // 

@@ -16,5 +16,18 @@ namespace MegaDeskDemo
         {
             InitializeComponent();
         }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void OpenViewQuotes(object sender, EventArgs e)
+        {
+            AddQuote viewQuotes = new AddQuote();
+            viewQuotes.Tag = this;
+            viewQuotes.Show(this);
+            Hide();
+        }
     }
 }
