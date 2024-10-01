@@ -9,3 +9,14 @@ C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P
 C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P1\MegaDeskDemo\obj\Debug\MegaDeskDemo.exe
 C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P1\MegaDeskDemo\obj\Debug\MegaDeskDemo.pdb
 C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P1\MegaDeskDemo\obj\Debug\MegaDeskDemo.AddQuote.resources
+C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\obj\Debug\MegaDeskDemo.csproj.AssemblyReference.cache
+C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\obj\Debug\MegaDeskDemo.mainMenu.resources
+C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\obj\Debug\MegaDeskDemo.Properties.Resources.resources
+C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\obj\Debug\MegaDeskDemo.AddQuote.resources
+C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\obj\Debug\MegaDeskDemo.csproj.GenerateResource.cache
+C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\obj\Debug\MegaDeskDemo.csproj.CoreCompileInputs.cache
+C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\obj\Debug\MegaDeskDemo.exe
+C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\obj\Debug\MegaDeskDemo.pdb
+C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\bin\Debug\MegaDeskDemo.exe.config
+C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\bin\Debug\MegaDeskDemo.exe
+C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\bin\Debug\MegaDeskDemo.pdb

@@ -1,13 +1,22 @@
-public string customerName { get; set; }
-public string orderDate { get; set; }
-public Desk desk { get; set; }
-public string shippingDays { get; set; }
-public double price { get; set; }
-public DeskQuote()
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MegaDeskDemo
 {
-    customerName = string.Empty;
-    orderDate = DateTime.Empty;
-    desk = new Desk();
-    price = double.Empty;
-    
+    internal class DeskQuote
+    {
+        public string customerName {  get; set; }
+        public string orderDate { get; set; }
+        public Desk desk { get; set; }
+        public string shippingDays { get; set; }
+        public double price { get; set; }
+        public DeskQuote()
+        {
+            customerName = string.Empty;
+            desk = new Desk();
+        }
+    }
 }

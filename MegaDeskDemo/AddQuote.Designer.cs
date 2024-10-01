@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuBackBtn = new System.Windows.Forms.Button();
             this.submitOrderBtn = new System.Windows.Forms.Button();
             this.dateNowLbl = new System.Windows.Forms.Label();
@@ -48,6 +49,16 @@
             this.WidthBox = new System.Windows.Forms.TextBox();
             this.NameBox = new System.Windows.Forms.TextBox();
             this.DateLabel = new System.Windows.Forms.Label();
+            this.WidthErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.NameErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.DepthErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.DrawerErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.ShippingErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.WidthErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NameErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DepthErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DrawerErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShippingErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // menuBackBtn
@@ -182,14 +193,20 @@
             this.DepthBox.Name = "DepthBox";
             this.DepthBox.Size = new System.Drawing.Size(198, 20);
             this.DepthBox.TabIndex = 17;
+            this.DepthBox.Validating += new System.ComponentModel.CancelEventHandler(this.DepthBox_Validating);
             // 
             // ShippingComboBox
             // 
             this.ShippingComboBox.FormattingEnabled = true;
+            this.ShippingComboBox.Items.AddRange(new object[] {
+            "3",
+            "5",
+            "7"});
             this.ShippingComboBox.Location = new System.Drawing.Point(235, 333);
             this.ShippingComboBox.Name = "ShippingComboBox";
             this.ShippingComboBox.Size = new System.Drawing.Size(198, 21);
             this.ShippingComboBox.TabIndex = 20;
+            this.ShippingComboBox.Validating += new System.ComponentModel.CancelEventHandler(this.ShippingBox_Validating);
             // 
             // MaterialComboBox
             // 
@@ -202,10 +219,20 @@
             // DrawerInput
             // 
             this.DrawerInput.FormattingEnabled = true;
+            this.DrawerInput.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
             this.DrawerInput.Location = new System.Drawing.Point(235, 232);
             this.DrawerInput.Name = "DrawerInput";
             this.DrawerInput.Size = new System.Drawing.Size(198, 21);
             this.DrawerInput.TabIndex = 22;
+            this.DrawerInput.Validating += new System.ComponentModel.CancelEventHandler(this.DrawerBox_Validating);
             // 
             // WidthBox
             // 
@@ -213,6 +240,7 @@
             this.WidthBox.Name = "WidthBox";
             this.WidthBox.Size = new System.Drawing.Size(198, 20);
             this.WidthBox.TabIndex = 23;
+            this.WidthBox.Validating += new System.ComponentModel.CancelEventHandler(this.WidthBox_Validating);
             // 
             // NameBox
             // 
@@ -220,6 +248,7 @@
             this.NameBox.Name = "NameBox";
             this.NameBox.Size = new System.Drawing.Size(198, 20);
             this.NameBox.TabIndex = 24;
+            this.NameBox.Validating += new System.ComponentModel.CancelEventHandler(this.NameBox_Validating);
             // 
             // DateLabel
             // 
@@ -230,6 +259,26 @@
             this.DateLabel.Size = new System.Drawing.Size(102, 20);
             this.DateLabel.TabIndex = 25;
             this.DateLabel.Text = "Today\'s Date";
+            // 
+            // WidthErrorProvider
+            // 
+            this.WidthErrorProvider.ContainerControl = this;
+            // 
+            // NameErrorProvider
+            // 
+            this.NameErrorProvider.ContainerControl = this;
+            // 
+            // DepthErrorProvider
+            // 
+            this.DepthErrorProvider.ContainerControl = this;
+            // 
+            // DrawerErrorProvider
+            // 
+            this.DrawerErrorProvider.ContainerControl = this;
+            // 
+            // ShippingErrorProvider
+            // 
+            this.ShippingErrorProvider.ContainerControl = this;
             // 
             // AddQuote
             // 
@@ -258,6 +307,12 @@
             this.Controls.Add(this.menuBackBtn);
             this.Name = "AddQuote";
             this.Text = "Add Quote";
+            this.Load += new System.EventHandler(this.AddQuote_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.WidthErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NameErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DepthErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DrawerErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ShippingErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,5 +340,10 @@
         private System.Windows.Forms.TextBox WidthBox;
         private System.Windows.Forms.TextBox NameBox;
         private System.Windows.Forms.Label DateLabel;
+        private System.Windows.Forms.ErrorProvider WidthErrorProvider;
+        private System.Windows.Forms.ErrorProvider NameErrorProvider;
+        private System.Windows.Forms.ErrorProvider DepthErrorProvider;
+        private System.Windows.Forms.ErrorProvider DrawerErrorProvider;
+        private System.Windows.Forms.ErrorProvider ShippingErrorProvider;
     }
 }
