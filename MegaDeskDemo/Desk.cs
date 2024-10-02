@@ -8,15 +8,17 @@ namespace MegaDeskDemo
 {
     public class Desk
     {
-        public enum DeskMaterial
-        {
-            Pine,
-            Laminate,
-            Veneer,
-            Oak,
-            Rosewood
-        }
-        
+        //public enum DeskMaterial
+        //{
+        //    Pine,
+        //    Laminate,
+        //    Veneer,
+        //    Oak,
+        //    Rosewood
+        //}
+
+        public string Material { get; set; }
+
         private int _width;
         public int Width
         {
@@ -97,7 +99,6 @@ namespace MegaDeskDemo
             }
         }
 
-        public string Material { get; set; }
         public Desk() { }
         public Desk(int width, int depth, int drawerNumber, string material, int shippingDays)
         {

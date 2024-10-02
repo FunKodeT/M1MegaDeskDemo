@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MegaDeskDemo
 {
-    internal class DeskQuote
+    public class DeskQuote
     {
         public string customerName {  get; set; }
         public string orderDate { get; set; }

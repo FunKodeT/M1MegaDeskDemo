@@ -76,11 +76,6 @@ namespace MegaDeskDemo
             }
         }
 
-        private void AddQuote_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void DepthBox_Validating(object sender, CancelEventArgs e)
         {
             TextBox input = (TextBox)sender;
@@ -103,11 +98,11 @@ namespace MegaDeskDemo
                 DepthErrorProvider.SetError(this.DepthBox, "Input must be between 24 and 96 inches.");
             }
         }
-
+        
         private void DrawerBox_Validating(object sender, CancelEventArgs e)
         {
             {
-                TextBox input = (TextBox)sender;
+                ComboBox input = (ComboBox)sender;
                 try
                 {
                     int newDrawer;
@@ -129,10 +124,34 @@ namespace MegaDeskDemo
             }
         }
 
+        private void MaterialBox_Validating(object sender, CancelEventArgs e)
+        {
+            {
+                ComboBox input = (ComboBox)sender;
+                try
+                {
+                    string newMaterial = input.Text;
+                    if (newMaterial != "")
+                    {
+                        deskQuote.desk.Material = newMaterial;
+                        MaterialErrorProvider.SetError(this.MaterialComboBox, "");
+                    }
+                    else
+                    {
+                        MaterialErrorProvider.SetError(this.MaterialComboBox, "Choose a material.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MaterialErrorProvider.SetError(this.MaterialComboBox, "Input must not be empty.");
+                }
+            }
+        }
+
         private void ShippingBox_Validating(object sender, CancelEventArgs e)
         {
             {
-                TextBox input = (TextBox)sender;
+                ComboBox input = (ComboBox)sender;
                 try
                 {
                     int newShipping;
@@ -152,6 +171,22 @@ namespace MegaDeskDemo
                     ShippingErrorProvider.SetError(this.ShippingComboBox, "Input must not be empty.");
                 }
             }
+        }
+
+        private void AddQuote_Load(object sender, EventArgs e)
+        {
+            DateLabel.Text = DateTime.Now.ToString();
+        }
+
+        private void SubmitOrderBtn_Click(object sender, EventArgs e)
+        {
+            if (WidthBox.Text.Length == 0 || DepthBox.Text.Length == 0 || DrawerInput.Text.Length == 0) return;
+            int surfaceArea = deskQuote.desk.getSurfaceArea();
+            string orderDate = DateTime.Now.ToShortDateString();
+            int shipping = deskQuote.desk.ShippingDays;
+            DisplayQuote frm = new DisplayQuote(deskQuote);
+            frm.Show();
+            Close();
         }
     }
 }

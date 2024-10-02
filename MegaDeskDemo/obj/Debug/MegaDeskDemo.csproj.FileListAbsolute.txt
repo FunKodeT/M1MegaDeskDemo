@@ -20,3 +20,4 @@ C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P
 C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\bin\Debug\MegaDeskDemo.exe.config
 C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\bin\Debug\MegaDeskDemo.exe
 C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\bin\Debug\MegaDeskDemo.pdb
+C:\Users\coote\Documents\Coding\CourseWork\7_TESD1440_C-Sharp_Programming_I\M2\P2\MegaDeskDemo\obj\Debug\MegaDeskDemo.DisplayQuote.resources

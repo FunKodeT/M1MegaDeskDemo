@@ -54,11 +54,13 @@
             this.DepthErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.DrawerErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.ShippingErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.MaterialErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.WidthErrorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NameErrorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DepthErrorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DrawerErrorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShippingErrorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MaterialErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // menuBackBtn
@@ -67,7 +69,7 @@
             this.menuBackBtn.Name = "menuBackBtn";
             this.menuBackBtn.Size = new System.Drawing.Size(198, 52);
             this.menuBackBtn.TabIndex = 0;
-            this.menuBackBtn.Text = "Go Back";
+            this.menuBackBtn.Text = "Main Menu";
             this.menuBackBtn.UseVisualStyleBackColor = true;
             this.menuBackBtn.Click += new System.EventHandler(this.GoBack);
             // 
@@ -79,6 +81,7 @@
             this.submitOrderBtn.TabIndex = 1;
             this.submitOrderBtn.Text = "Submit Order";
             this.submitOrderBtn.UseVisualStyleBackColor = true;
+            this.submitOrderBtn.Click += new System.EventHandler(this.SubmitOrderBtn_Click);
             // 
             // dateNowLbl
             // 
@@ -211,10 +214,17 @@
             // MaterialComboBox
             // 
             this.MaterialComboBox.FormattingEnabled = true;
+            this.MaterialComboBox.Items.AddRange(new object[] {
+            "Pine",
+            "Laminate",
+            "Veneer",
+            "Oak",
+            "Rosewood"});
             this.MaterialComboBox.Location = new System.Drawing.Point(235, 281);
             this.MaterialComboBox.Name = "MaterialComboBox";
             this.MaterialComboBox.Size = new System.Drawing.Size(198, 21);
             this.MaterialComboBox.TabIndex = 21;
+            this.MaterialComboBox.Validating += new System.ComponentModel.CancelEventHandler(this.MaterialBox_Validating);
             // 
             // DrawerInput
             // 
@@ -280,6 +290,10 @@
             // 
             this.ShippingErrorProvider.ContainerControl = this;
             // 
+            // MaterialErrorProvider
+            // 
+            this.MaterialErrorProvider.ContainerControl = this;
+            // 
             // AddQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -313,6 +327,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.DepthErrorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DrawerErrorProvider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShippingErrorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MaterialErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,5 +360,6 @@
         private System.Windows.Forms.ErrorProvider DepthErrorProvider;
         private System.Windows.Forms.ErrorProvider DrawerErrorProvider;
         private System.Windows.Forms.ErrorProvider ShippingErrorProvider;
+        private System.Windows.Forms.ErrorProvider MaterialErrorProvider;
     }
 }
