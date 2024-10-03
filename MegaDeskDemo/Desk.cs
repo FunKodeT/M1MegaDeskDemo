@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MegaDeskDemo
 {
-    public class Desk
+    public partial class Desk
     {
         //public enum DeskMaterial
         //{

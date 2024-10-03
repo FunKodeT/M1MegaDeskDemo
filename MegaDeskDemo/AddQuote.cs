@@ -14,6 +14,7 @@ namespace MegaDeskDemo
     public partial class AddQuote : Form
     {
         private DeskQuote deskQuote = new DeskQuote();
+
         public AddQuote()
         {
             InitializeComponent();
@@ -36,7 +37,7 @@ namespace MegaDeskDemo
             TextBox input = (TextBox)sender;
             try
             {
-                int newWidth;
+                int newWidth = int.Parse(input.Text);
                 bool isNum = Int32.TryParse(input.Text, out newWidth);
                 if (isNum)
                 {
@@ -185,7 +186,11 @@ namespace MegaDeskDemo
             string orderDate = DateTime.Now.ToShortDateString();
             int shipping = deskQuote.desk.ShippingDays;
             DisplayQuote frm = new DisplayQuote(deskQuote);
+            Console.WriteLine("Opening the form");
+            Console.WriteLine("FRM TYPE:" + frm.GetType());
+            Console.WriteLine("Args" + e.ToString());
             frm.Show();
+            
             Close();
         }
     }

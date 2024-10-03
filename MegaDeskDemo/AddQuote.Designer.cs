@@ -55,6 +55,7 @@
             this.DrawerErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.ShippingErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.MaterialErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.WidthErrorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NameErrorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DepthErrorProvider)).BeginInit();
@@ -65,7 +66,7 @@
             // 
             // menuBackBtn
             // 
-            this.menuBackBtn.Location = new System.Drawing.Point(12, 386);
+            this.menuBackBtn.Location = new System.Drawing.Point(12, 378);
             this.menuBackBtn.Name = "menuBackBtn";
             this.menuBackBtn.Size = new System.Drawing.Size(198, 52);
             this.menuBackBtn.TabIndex = 0;
@@ -75,7 +76,7 @@
             // 
             // submitOrderBtn
             // 
-            this.submitOrderBtn.Location = new System.Drawing.Point(235, 386);
+            this.submitOrderBtn.Location = new System.Drawing.Point(235, 378);
             this.submitOrderBtn.Name = "submitOrderBtn";
             this.submitOrderBtn.Size = new System.Drawing.Size(198, 52);
             this.submitOrderBtn.TabIndex = 1;
@@ -86,28 +87,28 @@
             // dateNowLbl
             // 
             this.dateNowLbl.AutoSize = true;
-            this.dateNowLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateNowLbl.Location = new System.Drawing.Point(8, 34);
+            this.dateNowLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateNowLbl.Location = new System.Drawing.Point(106, 86);
             this.dateNowLbl.Name = "dateNowLbl";
-            this.dateNowLbl.Size = new System.Drawing.Size(106, 20);
+            this.dateNowLbl.Size = new System.Drawing.Size(109, 17);
             this.dateNowLbl.TabIndex = 2;
             this.dateNowLbl.Text = "Today\'s Date:";
             // 
             // plzNameLbl
             // 
             this.plzNameLbl.AutoSize = true;
-            this.plzNameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plzNameLbl.Location = new System.Drawing.Point(8, 82);
+            this.plzNameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plzNameLbl.Location = new System.Drawing.Point(13, 49);
             this.plzNameLbl.Name = "plzNameLbl";
-            this.plzNameLbl.Size = new System.Drawing.Size(184, 20);
+            this.plzNameLbl.Size = new System.Drawing.Size(168, 20);
             this.plzNameLbl.TabIndex = 3;
-            this.plzNameLbl.Text = "Please Enter Your Name";
+            this.plzNameLbl.Text = "Please Enter Name:";
             // 
             // deskWidthLbl
             // 
             this.deskWidthLbl.AutoSize = true;
             this.deskWidthLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deskWidthLbl.Location = new System.Drawing.Point(8, 134);
+            this.deskWidthLbl.Location = new System.Drawing.Point(13, 157);
             this.deskWidthLbl.Name = "deskWidthLbl";
             this.deskWidthLbl.Size = new System.Drawing.Size(95, 20);
             this.deskWidthLbl.TabIndex = 4;
@@ -117,7 +118,7 @@
             // 
             this.deskDepthLbl.AutoSize = true;
             this.deskDepthLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deskDepthLbl.Location = new System.Drawing.Point(8, 184);
+            this.deskDepthLbl.Location = new System.Drawing.Point(13, 207);
             this.deskDepthLbl.Name = "deskDepthLbl";
             this.deskDepthLbl.Size = new System.Drawing.Size(98, 20);
             this.deskDepthLbl.TabIndex = 5;
@@ -127,7 +128,7 @@
             // 
             this.deskAmountLbl.AutoSize = true;
             this.deskAmountLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deskAmountLbl.Location = new System.Drawing.Point(8, 233);
+            this.deskAmountLbl.Location = new System.Drawing.Point(13, 257);
             this.deskAmountLbl.Name = "deskAmountLbl";
             this.deskAmountLbl.Size = new System.Drawing.Size(165, 20);
             this.deskAmountLbl.TabIndex = 6;
@@ -137,7 +138,7 @@
             // 
             this.matTypeLbl.AutoSize = true;
             this.matTypeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.matTypeLbl.Location = new System.Drawing.Point(8, 282);
+            this.matTypeLbl.Location = new System.Drawing.Point(13, 294);
             this.matTypeLbl.Name = "matTypeLbl";
             this.matTypeLbl.Size = new System.Drawing.Size(107, 20);
             this.matTypeLbl.TabIndex = 7;
@@ -147,7 +148,7 @@
             // 
             this.shipTimeLbl.AutoSize = true;
             this.shipTimeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.shipTimeLbl.Location = new System.Drawing.Point(8, 334);
+            this.shipTimeLbl.Location = new System.Drawing.Point(13, 331);
             this.shipTimeLbl.Name = "shipTimeLbl";
             this.shipTimeLbl.Size = new System.Drawing.Size(154, 20);
             this.shipTimeLbl.TabIndex = 8;
@@ -156,17 +157,17 @@
             // megaDeskHdrLbl
             // 
             this.megaDeskHdrLbl.AutoSize = true;
-            this.megaDeskHdrLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.megaDeskHdrLbl.Location = new System.Drawing.Point(7, 8);
+            this.megaDeskHdrLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.megaDeskHdrLbl.Location = new System.Drawing.Point(12, 9);
             this.megaDeskHdrLbl.Name = "megaDeskHdrLbl";
-            this.megaDeskHdrLbl.Size = new System.Drawing.Size(116, 26);
+            this.megaDeskHdrLbl.Size = new System.Drawing.Size(422, 26);
             this.megaDeskHdrLbl.TabIndex = 9;
-            this.megaDeskHdrLbl.Text = "MegaDesk";
+            this.megaDeskHdrLbl.Text = "MegaDesk                                                   ";
             // 
             // shipTimeReqLbl
             // 
             this.shipTimeReqLbl.AutoSize = true;
-            this.shipTimeReqLbl.Location = new System.Drawing.Point(12, 354);
+            this.shipTimeReqLbl.Location = new System.Drawing.Point(14, 351);
             this.shipTimeReqLbl.Name = "shipTimeReqLbl";
             this.shipTimeReqLbl.Size = new System.Drawing.Size(67, 13);
             this.shipTimeReqLbl.TabIndex = 13;
@@ -175,7 +176,7 @@
             // dskDepReqLbl
             // 
             this.dskDepReqLbl.AutoSize = true;
-            this.dskDepReqLbl.Location = new System.Drawing.Point(12, 204);
+            this.dskDepReqLbl.Location = new System.Drawing.Point(14, 227);
             this.dskDepReqLbl.Name = "dskDepReqLbl";
             this.dskDepReqLbl.Size = new System.Drawing.Size(67, 13);
             this.dskDepReqLbl.TabIndex = 14;
@@ -184,7 +185,7 @@
             // dskWidReqLbl
             // 
             this.dskWidReqLbl.AutoSize = true;
-            this.dskWidReqLbl.Location = new System.Drawing.Point(12, 154);
+            this.dskWidReqLbl.Location = new System.Drawing.Point(14, 177);
             this.dskWidReqLbl.Name = "dskWidReqLbl";
             this.dskWidReqLbl.Size = new System.Drawing.Size(67, 13);
             this.dskWidReqLbl.TabIndex = 15;
@@ -192,7 +193,7 @@
             // 
             // DepthBox
             // 
-            this.DepthBox.Location = new System.Drawing.Point(235, 184);
+            this.DepthBox.Location = new System.Drawing.Point(225, 207);
             this.DepthBox.Name = "DepthBox";
             this.DepthBox.Size = new System.Drawing.Size(198, 20);
             this.DepthBox.TabIndex = 17;
@@ -205,7 +206,7 @@
             "3",
             "5",
             "7"});
-            this.ShippingComboBox.Location = new System.Drawing.Point(235, 333);
+            this.ShippingComboBox.Location = new System.Drawing.Point(225, 333);
             this.ShippingComboBox.Name = "ShippingComboBox";
             this.ShippingComboBox.Size = new System.Drawing.Size(198, 21);
             this.ShippingComboBox.TabIndex = 20;
@@ -220,7 +221,7 @@
             "Veneer",
             "Oak",
             "Rosewood"});
-            this.MaterialComboBox.Location = new System.Drawing.Point(235, 281);
+            this.MaterialComboBox.Location = new System.Drawing.Point(225, 293);
             this.MaterialComboBox.Name = "MaterialComboBox";
             this.MaterialComboBox.Size = new System.Drawing.Size(198, 21);
             this.MaterialComboBox.TabIndex = 21;
@@ -238,7 +239,7 @@
             "5",
             "6",
             "7"});
-            this.DrawerInput.Location = new System.Drawing.Point(235, 232);
+            this.DrawerInput.Location = new System.Drawing.Point(225, 256);
             this.DrawerInput.Name = "DrawerInput";
             this.DrawerInput.Size = new System.Drawing.Size(198, 21);
             this.DrawerInput.TabIndex = 22;
@@ -246,7 +247,7 @@
             // 
             // WidthBox
             // 
-            this.WidthBox.Location = new System.Drawing.Point(235, 134);
+            this.WidthBox.Location = new System.Drawing.Point(225, 157);
             this.WidthBox.Name = "WidthBox";
             this.WidthBox.Size = new System.Drawing.Size(198, 20);
             this.WidthBox.TabIndex = 23;
@@ -254,7 +255,7 @@
             // 
             // NameBox
             // 
-            this.NameBox.Location = new System.Drawing.Point(235, 82);
+            this.NameBox.Location = new System.Drawing.Point(225, 49);
             this.NameBox.Name = "NameBox";
             this.NameBox.Size = new System.Drawing.Size(198, 20);
             this.NameBox.TabIndex = 24;
@@ -263,10 +264,10 @@
             // DateLabel
             // 
             this.DateLabel.AutoSize = true;
-            this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateLabel.Location = new System.Drawing.Point(278, 34);
+            this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateLabel.Location = new System.Drawing.Point(255, 86);
             this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(102, 20);
+            this.DateLabel.Size = new System.Drawing.Size(92, 17);
             this.DateLabel.TabIndex = 25;
             this.DateLabel.Text = "Today\'s Date";
             // 
@@ -294,11 +295,22 @@
             // 
             this.MaterialErrorProvider.ContainerControl = this;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(13, 120);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(417, 20);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Specifications                                                           ";
+            // 
             // AddQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(445, 442);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.DateLabel);
             this.Controls.Add(this.NameBox);
             this.Controls.Add(this.WidthBox);
@@ -361,5 +373,6 @@
         private System.Windows.Forms.ErrorProvider DrawerErrorProvider;
         private System.Windows.Forms.ErrorProvider ShippingErrorProvider;
         private System.Windows.Forms.ErrorProvider MaterialErrorProvider;
+        private System.Windows.Forms.Label label4;
     }
 }

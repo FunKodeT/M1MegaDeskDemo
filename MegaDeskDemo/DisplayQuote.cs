@@ -12,11 +12,12 @@ namespace MegaDeskDemo
 {
     public partial class DisplayQuote : Form
     {
-        private DeskQuote DeskQuote;
+        private DeskQuote DeskQuote = new DeskQuote();
         public DisplayQuote(DeskQuote deskQuote)
         {
             DeskQuote = deskQuote;
             InitializeComponent();
+            Console.WriteLine("Customer Name: " + deskQuote.customerName);
         }
         private void return_to_main()
         {
@@ -31,8 +32,10 @@ namespace MegaDeskDemo
         private void DisplayQuote_Load(object sender, EventArgs e)
         {
             CustomerName.Text = DeskQuote.customerName;
+            Console.WriteLine("Sender" + sender.GetType());
             QuoteDate.Text = DeskQuote.orderDate;
             string width = Convert.ToString(DeskQuote.desk.Width);
+            Console.WriteLine("Width:" + width);
             string depth = Convert.ToString(DeskQuote.desk.Depth);
             string drawers = Convert.ToString(DeskQuote.desk.DrawerNumber);
             string shippingDays = Convert.ToString(DeskQuote.desk.ShippingDays);
